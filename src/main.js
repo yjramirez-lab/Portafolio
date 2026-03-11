@@ -31,7 +31,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="stack-grid">
           ${portfolioData.stackCategories.map(cat => `
-            <button class="stack-category-btn" data-category="${cat.id}">
+            <button class="stack-category-btn stack-${cat.id}" data-category="${cat.id}">
               <i data-lucide="${cat.icon}" size="32"></i>
               <span class="stack-category-title mono">${cat.title}</span>
             </button>
@@ -53,7 +53,7 @@ document.querySelector('#app').innerHTML = `
                 <h3 class="project-title">${proj.title}</h3>
                 <p class="project-desc">${proj.description}</p>
                 <div class="sim-tech mono">
-                  ${proj.tech.map(t => `<span>${t}</span>`).join('')}
+                  ${proj.tech.map(t => `<span class="${t.class}">${t.label}</span>`).join('')}
                 </div>
               </div>
             </a>
@@ -69,11 +69,14 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="sim-list">
           ${portfolioData.simulations.map(sim => `
-            <div class="sim-item">
+            <a href="${sim.link}" target="_blank" class="sim-item">
               <div class="sim-header">
-                <div>
-                  <h3 class="sim-role">${sim.role}</h3>
-                  <div class="sim-company">${sim.company}</div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <img src="${sim.logoUrl}" alt="${sim.company}" class="sim-logo" style="width: 40px; height: 40px; object-fit: contain;">
+                  <div>
+                    <h3 class="sim-role">${sim.role}</h3>
+                    <div class="sim-company">${sim.company}</div>
+                  </div>
                 </div>
                 <div class="sim-period mono">${sim.period}</div>
               </div>
@@ -82,9 +85,9 @@ document.querySelector('#app').innerHTML = `
                 ${sim.features.map(f => `<li>${f}</li>`).join('')}
               </ul>
               <div class="sim-tech mono">
-                ${sim.tech.map(t => `<span>${t}</span>`).join('')}
+                ${sim.tech.map(t => `<span class="${t.class}">${t.label}</span>`).join('')}
               </div>
-            </div>
+            </a>
           `).join('')}
         </div>
       </div>

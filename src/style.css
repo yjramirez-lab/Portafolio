@@ -185,8 +185,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
 }
 
 .stack-category-btn:hover {
-  border-color: var(--accent);
-  color: var(--text-light);
   background: var(--bg-card-hover);
   transform: translateY(-2px);
 }
@@ -195,15 +193,22 @@ button { cursor: pointer; border: none; font-family: inherit; }
   color: var(--text-muted);
   transition: var(--transition);
 }
-.stack-category-btn:hover i {
-  color: var(--accent);
-}
 
 .stack-category-title {
   font-size: 0.85rem;
   font-weight: 600;
   text-align: center;
 }
+
+/* Modifier classes for each category color pop out effect */
+.stack-dev:hover { border-color: #58a6ff; box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2); }
+.stack-dev:hover i, .stack-dev:hover .stack-category-title { color: #58a6ff; }
+
+.stack-data:hover { border-color: #34d399; box-shadow: 0 4px 12px rgba(52, 211, 153, 0.2); }
+.stack-data:hover i, .stack-data:hover .stack-category-title { color: #34d399; }
+
+.stack-ai:hover { border-color: #a78bfa; box-shadow: 0 4px 12px rgba(167, 139, 250, 0.2); }
+.stack-ai:hover i, .stack-ai:hover .stack-category-title { color: #a78bfa; }
 
 
 /* =========== PROYECTOS THUMBNAILS CARDS =========== */
@@ -316,10 +321,19 @@ button { cursor: pointer; border: none; font-family: inherit; }
 }
 
 .sim-item {
+  display: block;
   background: var(--bg-main);
   border: 1px solid var(--border-color);
   padding: 20px;
   border-radius: calc(var(--border-radius) - 2px);
+  transition: var(--transition);
+}
+
+.sim-item:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .sim-header {
@@ -336,6 +350,17 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .sim-company {
   font-size: 0.85rem;
   color: var(--accent);
+}
+
+.sim-logo {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.sim-item:hover .sim-logo {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .sim-period {
@@ -381,10 +406,23 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .sim-tech span {
   font-size: 0.7rem;
   padding: 4px 8px;
-  background: rgba(88, 166, 255, 0.1);
-  color: var(--accent);
   border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: default;
 }
+
+.tag-dev { background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid transparent; }
+.tag-dev:hover { background: rgba(88, 166, 255, 0.2); box-shadow: 0 0 8px rgba(88, 166, 255, 0.4); border-color: rgba(88, 166, 255, 0.3); transform: translateY(-1px); }
+
+.tag-data { background: rgba(52, 211, 153, 0.1); color: #34d399; border: 1px solid transparent; }
+.tag-data:hover { background: rgba(52, 211, 153, 0.2); box-shadow: 0 0 8px rgba(52, 211, 153, 0.4); border-color: rgba(52, 211, 153, 0.3); transform: translateY(-1px); }
+
+.tag-ai { background: rgba(167, 139, 250, 0.1); color: #a78bfa; border: 1px solid transparent; }
+.tag-ai:hover { background: rgba(167, 139, 250, 0.2); box-shadow: 0 0 8px rgba(167, 139, 250, 0.4); border-color: rgba(167, 139, 250, 0.3); transform: translateY(-1px); }
+
+.tag-tools { background: rgba(251, 146, 60, 0.1); color: #fb923c; border: 1px solid transparent; }
+.tag-tools:hover { background: rgba(251, 146, 60, 0.2); box-shadow: 0 0 8px rgba(251, 146, 60, 0.4); border-color: rgba(251, 146, 60, 0.3); transform: translateY(-1px); }
 
 /* ================= MODAL / CAROUSEL ================= */
 .modal-overlay {
