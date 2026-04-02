@@ -123,15 +123,13 @@ export const ProjectsGrid = () => {
             </div>
             <div className="flex flex-col gap-6">
                 {data.projects.map(proj => (
-                    // Whole card is clickable -> goes to Notion
-                    <a
+                    // Card uses div + onClick to avoid nested <a> HTML error
+                    <div
                         key={proj.id}
-                        href={proj.notionUrl}
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={() => window.open(proj.notionUrl, '_blank', 'noreferrer')}
                         className="flex flex-col md:flex-row bg-[var(--bg-main)] border border-[var(--border-color)] rounded-xl overflow-hidden hover:border-[var(--accent)] hover:shadow-lg hover:-translate-y-0.5 transition-all group cursor-pointer"
                     >
-                        {/* Thumbnail: fixed h-52 on all screens, object-center so the dashboard is always visible */}
+                        {/* Thumbnail */}
                         <div className="w-full md:w-60 md:flex-shrink-0 overflow-hidden bg-black" style={{ height: 'auto', minHeight: '200px' }}>
                             <img
                                 src={proj.thumbnail}
@@ -145,7 +143,7 @@ export const ProjectsGrid = () => {
                             <h3 className="text-lg text-[var(--text-light)] font-bold mb-2 group-hover:text-[var(--accent)] transition-colors">{proj.title}</h3>
                             <p className="text-sm text-[var(--text-muted)] mb-5 flex-grow leading-relaxed">{proj.description}</p>
 
-                            {/* Action buttons — always visible, prominent */}
+                            {/* Action buttons — stop propagation so they don't trigger the card's onClick */}
                             <div className="flex gap-3 mb-5 flex-wrap" onClick={(e) => e.stopPropagation()}>
                                 {proj.links && proj.links.map((link, idx) => (
                                     <a
@@ -175,7 +173,7 @@ export const ProjectsGrid = () => {
                                 })}
                             </div>
                         </div>
-                    </a>
+                    </div>
                 ))}
             </div>
         </motion.div>
