@@ -33,8 +33,8 @@ export const Header = ({ theme, toggleTheme }: { theme: string, toggleTheme: () 
                 <a href="#projects" className="hidden sm:block font-mono text-sm text-[var(--text-muted)] hover:text-[var(--text-light)] transition-colors">/projects</a>
                 <a href="#credentials" className="hidden md:block font-mono text-sm text-[var(--text-muted)] hover:text-[var(--text-light)] transition-colors">/credentials</a>
 
-                <button onClick={toggleLanguage} className="font-mono text-xs border border-[var(--border-color)] px-3 py-1.5 rounded text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] transition-colors uppercase tracking-widest">
-                    {language === 'es' ? '🇪🇸 ES' : '🇺🇸 EN'}
+                <button onClick={toggleLanguage} title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'} className="font-mono text-xs border border-[var(--border-color)] px-3 py-1.5 rounded text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] transition-colors uppercase tracking-widest">
+                    {language === 'es' ? '🇺🇸 EN' : '🇪🇸 ES'}
                 </button>
 
                 <button onClick={toggleTheme} className="p-2 border border-[var(--border-color)] rounded text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] transition-colors flex items-center justify-center">
@@ -53,12 +53,12 @@ export const ProfileCard = () => {
     const data = portfolioData[language];
     return (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[var(--bg-profile)] rounded-xl p-8 text-white flex flex-col items-center text-center mb-8 shadow-lg">
-            {/* Fixed avatar: object-center, overflow-hidden, bg neutral so no gap */}
-            <div className="w-28 h-28 rounded-full border-4 border-white/30 mb-5 overflow-hidden bg-gray-700 flex-shrink-0">
+            {/* Avatar: object-contain shows full circular illustration without cropping */}
+            <div className="w-32 h-32 rounded-full border-4 border-white/30 mb-5 overflow-hidden bg-blue-800 flex-shrink-0 flex items-center justify-center">
                 <img
                     src={data.personal.avatarUrl}
                     alt={`${data.personal.name} profile photo`}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-contain"
                 />
             </div>
             <h1 className="text-2xl font-bold mb-1">{data.personal.name}</h1>
@@ -131,12 +131,12 @@ export const ProjectsGrid = () => {
                         rel="noreferrer"
                         className="flex flex-col md:flex-row bg-[var(--bg-main)] border border-[var(--border-color)] rounded-xl overflow-hidden hover:border-[var(--accent)] hover:shadow-lg hover:-translate-y-0.5 transition-all group cursor-pointer"
                     >
-                        {/* Thumbnail */}
-                        <div className="md:w-56 flex-shrink-0 overflow-hidden bg-black">
+                        {/* Thumbnail: fixed aspect ratio so it looks stable on all screens */}
+                        <div className="md:w-64 flex-shrink-0 overflow-hidden bg-black" style={{ aspectRatio: '16/9' }}>
                             <img
                                 src={proj.thumbnail}
                                 alt={proj.title}
-                                className="w-full h-44 md:h-full object-cover brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
+                                className="w-full h-full object-cover object-top brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
                             />
                         </div>
                         {/* Content */}
@@ -153,8 +153,8 @@ export const ProjectsGrid = () => {
                                         target="_blank"
                                         rel="noreferrer"
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${idx === 0
-                                                ? 'bg-[var(--accent)] text-white hover:opacity-90 shadow'
-                                                : 'border border-[var(--border-color)] text-[var(--text-main)] hover:border-[var(--accent)] hover:text-[var(--accent)]'
+                                            ? 'bg-[var(--accent)] text-white hover:opacity-90 shadow'
+                                            : 'border border-[var(--border-color)] text-[var(--text-main)] hover:border-[var(--accent)] hover:text-[var(--accent)]'
                                             }`}
                                     >
                                         <Icon name={link.icon} size={14} />
