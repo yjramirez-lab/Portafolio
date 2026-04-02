@@ -53,12 +53,12 @@ export const ProfileCard = () => {
     const data = portfolioData[language];
     return (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[var(--bg-profile)] rounded-xl p-8 text-white flex flex-col items-center text-center mb-8 shadow-lg">
-            {/* Avatar: object-contain shows full circular illustration without cropping */}
-            <div className="w-32 h-32 rounded-full border-4 border-white/30 mb-5 overflow-hidden bg-blue-800 flex-shrink-0 flex items-center justify-center">
+            {/* Avatar: inline style guarantees object-fit:contain regardless of Tailwind purging */}
+            <div style={{ width: 140, height: 140, borderRadius: '50%', border: '4px solid rgba(255,255,255,0.3)', marginBottom: 20, overflow: 'hidden', flexShrink: 0, backgroundColor: '#1e3a6e' }}>
                 <img
                     src={data.personal.avatarUrl}
                     alt={`${data.personal.name} profile photo`}
-                    className="w-full h-full object-contain"
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
                 />
             </div>
             <h1 className="text-2xl font-bold mb-1">{data.personal.name}</h1>
