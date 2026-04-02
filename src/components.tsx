@@ -194,7 +194,7 @@ export const SimulationsList = () => {
                     <a key={sim.id} href={sim.link} target="_blank" rel="noreferrer" className="block bg-[var(--bg-main)] border border-[var(--border-color)] p-5 rounded-lg hover:bg-[var(--bg-card-hover)] hover:border-[var(--accent)] hover:-translate-y-0.5 transition-all group">
                         <div className="flex justify-between items-start mb-4">
                             <div className="flex items-center gap-3">
-                                <img src={sim.logoUrl} alt={sim.company} className="w-10 h-10 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all bg-white rounded p-1" />
+                                <img src={sim.logoUrl} alt={sim.company} className="w-10 h-10 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all rounded" />
                                 <div>
                                     <h3 className="text-[1.05rem] text-[var(--text-light)] font-semibold leading-tight">{sim.role}</h3>
                                     <div className="text-sm text-[var(--accent)] mt-0.5">{sim.company}</div>
@@ -239,7 +239,7 @@ export const CredentialsList = () => {
                 {data.education.map(cert => (
                     <a key={cert.id} href={cert.url} target="_blank" rel="noreferrer" className="flex items-center justify-between gap-4 p-4 bg-[var(--bg-main)] border border-[var(--border-color)] rounded-lg hover:border-[var(--accent)] transition-colors group">
                         <div className="flex items-center gap-4">
-                            <img src={cert.iconUrl} alt={`${cert.issuer} icon`} className="w-8 h-8 grayscale object-contain group-hover:grayscale-0 transition-all bg-white rounded p-1 flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                            <img src={cert.iconUrl} alt={`${cert.issuer} icon`} className="w-8 h-8 grayscale object-contain group-hover:grayscale-0 transition-all rounded flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                             <div>
                                 <h3 className="text-sm font-semibold text-[var(--text-light)]">{cert.title}</h3>
                                 <div className="font-mono text-[11px] text-[var(--text-muted)] mt-1">{cert.issuer}</div>

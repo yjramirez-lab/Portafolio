@@ -110,10 +110,10 @@ export const portfolioData = {
         period: "Feb. 2026",
         logoUrl: "https://bookface-images.s3.amazonaws.com/small_logos/6ec4d2785125c906ed8554bdfaca38ba13097af0.png",
         link: "https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/Fnbjyox4Y4SciuEGF_HgpPSsyQpzob6HEh9_699e0efe4a93fafe5d87e4c8_1771983911536_completion_certificate.pdf",
-        description: "Procesamiento crítico de datos para el entrenamiento de modelos de IA.",
+        description: "Procesamiento crítico de datos para el entrenamiento de modelos de IA, asegurando entradas de alta calidad para Aprendizaje Automático.",
         features: [
           "Categorización sistemática de datos bajo estándares de calidad estrictos.",
-          "Feedback Delivery para mejorar precisión de modelos ML."
+          "Retroalimentación para mejorar la precisión de los modelos de ML."
         ],
         tech: [
           { label: "Data Labeling", class: "tag-data" },
