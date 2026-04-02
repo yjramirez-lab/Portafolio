@@ -55,7 +55,7 @@ export const portfolioData = {
         title: "Retail Ops Data Pipeline",
         description: "ETL pipeline robusto y seguro para Retail. Extrae datos crudos, los limpia, inserta en SQLite y despliega una web app interactiva con Streamlit para análisis en tiempo real.",
         thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://www.notion.so/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0?pvs=74",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "SQLite", class: "tag-data" },
@@ -63,7 +63,25 @@ export const portfolioData = {
         ],
         links: [
           { title: "Ver App", url: "https://retail-ops-automation-apv9esayoeuswa5t6dnoet.streamlit.app/", icon: "external-link" },
-          { title: "Documentación", url: "https://www.notion.so/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0", icon: "book-open" }
+          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0?pvs=74", icon: "book-open" }
+        ]
+      },
+      {
+        id: 2,
+        title: "Marketing A/B Testing Pipeline",
+        description: "La pregunta del equipo de Marketing fue: “La Variante B tiene más ventas este mes, ¿la desplegamos a todos?",
+        thumbnail: "https://images.unsplash.com/photo-1674027001844-6ad209efd09e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc",
+        tech: [
+          { label: "Python", class: "tag-dev" },
+          { label: "DuckDB", class: "tag-data" },
+          { label: "Pandas", class: "tag-data" },
+          { label: "DBT", class: "tag-data" },
+          { label: "Streamlit", class: "tag-tools" }
+        ],
+        links: [
+          { title: "Ver App", url: "https://proyectomarketingabtest-wpzvh3ecsi8cqqbtunwn3q.streamlit.app/", icon: "external-link" },
+          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc", icon: "book-open" }
         ]
       }
     ],
@@ -203,7 +221,25 @@ export const portfolioData = {
         ],
         links: [
           { title: "Live App", url: "https://retail-ops-automation-apv9esayoeuswa5t6dnoet.streamlit.app/", icon: "external-link" },
-          { title: "Documentation", url: "https://www.notion.so/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0", icon: "book-open" }
+          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0?pvs=74", icon: "book-open" }
+        ]
+      },
+      {
+        id: 2,
+        title: "Marketing A/B Testing Pipeline",
+        description: "The Marketing team asked: 'Variant B has more sales this month — should we roll it out to everyone?' This pipeline answers that with statistical rigor using dbt + DuckDB.",
+        thumbnail: "https://images.unsplash.com/photo-1674027001844-6ad209efd09e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc",
+        tech: [
+          { label: "Python", class: "tag-dev" },
+          { label: "DuckDB", class: "tag-data" },
+          { label: "Pandas", class: "tag-data" },
+          { label: "DBT", class: "tag-data" },
+          { label: "Streamlit", class: "tag-tools" }
+        ],
+        links: [
+          { title: "Live App", url: "https://proyectomarketingabtest-wpzvh3ecsi8cqqbtunwn3q.streamlit.app/", icon: "external-link" },
+          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc", icon: "book-open" }
         ]
       }
     ],
