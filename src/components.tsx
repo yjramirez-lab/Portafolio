@@ -131,12 +131,13 @@ export const ProjectsGrid = () => {
                         rel="noreferrer"
                         className="flex flex-col md:flex-row bg-[var(--bg-main)] border border-[var(--border-color)] rounded-xl overflow-hidden hover:border-[var(--accent)] hover:shadow-lg hover:-translate-y-0.5 transition-all group cursor-pointer"
                     >
-                        {/* Thumbnail: fixed aspect ratio so it looks stable on all screens */}
-                        <div className="md:w-64 flex-shrink-0 overflow-hidden bg-black" style={{ aspectRatio: '16/9' }}>
+                        {/* Thumbnail: fixed h-52 on all screens, object-center so the dashboard is always visible */}
+                        <div className="w-full md:w-60 md:flex-shrink-0 overflow-hidden bg-black" style={{ height: 'auto', minHeight: '200px' }}>
                             <img
                                 src={proj.thumbnail}
                                 alt={proj.title}
-                                className="w-full h-full object-cover object-top brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
+                                className="w-full h-full object-cover brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
+                                style={{ objectPosition: '50% 40%', minHeight: '200px' }}
                             />
                         </div>
                         {/* Content */}
