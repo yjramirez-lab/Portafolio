@@ -106,6 +106,24 @@ export const portfolioData = {
           { title: "Ver Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
           { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
         ]
+      },
+      {
+        id: 5,
+        title: "Enterprise BI Reporting System",
+        description: "Dashboard corporativo del ecosistema e-commerce Olist. Implementación de Modelado Dimensional (Star Schema) anclado a base de datos SQLite manejada en Python. Uso avanzado de inteligencia de tiempo en DAX e inyección de temas visuales JSON para aplicar principios de UI minimalistas globales.",
+        thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        notionUrl: "https://github.com/yrami",
+        tech: [
+          { label: "Power BI", class: "tag-data" },
+          { label: "DAX", class: "tag-tools" },
+          { label: "Python", class: "tag-dev" },
+          { label: "SQLite", class: "tag-data" },
+          { label: "Star Schema", class: "tag-data" }
+        ],
+        links: [
+          { title: "Ver Repositorio", url: "https://github.com/", icon: "external-link" },
+          { title: "Documentación", url: "https://github.com/", icon: "book-open" }
+        ]
       }
     ],
     simulations: [
@@ -286,6 +304,24 @@ export const portfolioData = {
         links: [
           { title: "View Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
           { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
+        ]
+      },
+      {
+        id: 5,
+        title: "Enterprise BI Reporting System",
+        description: "Corporate-level dashboard for the Olist e-commerce ecosystem. Implementation of Dimensional Modeling (Star Schema) tied to a SQLite database manipulated by Python. Employed advanced DAX Time Intelligence algorithms and decoupled presentation layers by injecting JSON Themes to enforce global UI rules.",
+        thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        notionUrl: "https://github.com/yrami",
+        tech: [
+          { label: "Power BI", class: "tag-data" },
+          { label: "DAX", class: "tag-tools" },
+          { label: "Python", class: "tag-dev" },
+          { label: "SQLite", class: "tag-data" },
+          { label: "Star Schema", class: "tag-data" }
+        ],
+        links: [
+          { title: "View Repository", url: "https://github.com/", icon: "external-link" },
+          { title: "Documentation", url: "https://github.com/", icon: "book-open" }
         ]
       }
     ],
