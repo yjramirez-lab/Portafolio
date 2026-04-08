@@ -103,7 +103,8 @@ export const portfolioData = {
           { label: "openpyxl", class: "tag-data" }
         ],
         links: [
-          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site", icon: "book-open" }
+          { title: "Ver Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
+          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
         ]
       }
     ],
@@ -283,7 +284,8 @@ export const portfolioData = {
           { label: "openpyxl", class: "tag-data" }
         ],
         links: [
-          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site", icon: "book-open" }
+          { title: "View Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
+          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
         ]
       }
     ],
