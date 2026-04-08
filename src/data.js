@@ -29,11 +29,15 @@ export const portfolioData = {
         title: "Data Analytics",
         icon: "bar-chart-2",
         color: "emerald",
-        description: "Extracción, transformación y visualización de datos complejos para toma de decisiones.",
+        description: "Extracción, transformación y visualización de datos complejos. Pipelines Medallion (Bronze/Silver/Gold), estadística aplicada y dashboarding ejecutivo.",
         skills: [
-          { name: "Data Cleaning", icon: "filter" },
-          { name: "ETL Processes", icon: "database" },
-          { name: "Data Storytelling", icon: "presentation" }
+          { name: "SQL / dbt", icon: "database" },
+          { name: "Python · Pandas", icon: "code" },
+          { name: "DuckDB · SQLite · PostgreSQL", icon: "hard-drive" },
+          { name: "Excel BI · VBA · Office Scripts", icon: "table-2" },
+          { name: "Data Cleaning & Wrangling", icon: "filter" },
+          { name: "ETL / ELT Pipelines", icon: "git-branch" },
+          { name: "Data Storytelling", icon: "bar-chart-2" }
         ]
       },
       {
@@ -53,12 +57,13 @@ export const portfolioData = {
       {
         id: 1,
         title: "Retail Ops Data Pipeline",
-        description: "ETL pipeline robusto y seguro para Retail. Extrae datos crudos, los limpia, inserta en SQLite y despliega una web app interactiva con Streamlit para análisis en tiempo real.",
+        description: "Pipeline ETL de extremo a extremo para Retail. Genera 5,000+ registros de ventas sintéticos con errores controlados, los limpia en SQL (Capa Silver), inserta en PostgreSQL vía SQLAlchemy, y despliega una web app interactiva con Streamlit para análisis en tiempo real.",
         thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
         notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0?pvs=74",
         tech: [
           { label: "Python", class: "tag-dev" },
-          { label: "SQLite", class: "tag-data" },
+          { label: "PostgreSQL", class: "tag-data" },
+          { label: "SQLAlchemy", class: "tag-data" },
           { label: "Streamlit", class: "tag-tools" }
         ],
         links: [
@@ -69,19 +74,36 @@ export const portfolioData = {
       {
         id: 2,
         title: "Marketing A/B Testing Pipeline",
-        description: "La pregunta del equipo de Marketing fue: “La Variante B tiene más ventas este mes, ¿la desplegamos a todos?",
+        description: "¿La Variante B tiene más conversiones? Este pipeline responde con rigor estadístico (Z-test, p=0.0006). Arquitectura Medallion completa: tráfico sintético con errores inyectados → dbt + DuckDB → análisis estadístico → dashboard interactivo en Streamlit.",
         thumbnail: "https://images.unsplash.com/photo-1674027001844-6ad209efd09e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "DuckDB", class: "tag-data" },
           { label: "Pandas", class: "tag-data" },
-          { label: "DBT", class: "tag-data" },
+          { label: "dbt", class: "tag-data" },
           { label: "Streamlit", class: "tag-tools" }
         ],
         links: [
           { title: "Ver App", url: "https://proyectomarketingabtest-wpzvh3ecsi8cqqbtunwn3q.streamlit.app/", icon: "external-link" },
           { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc", icon: "book-open" }
+        ]
+      },
+      {
+        id: 3,
+        title: "Student Performance BI",
+        description: "Motor de Inteligencia de Negocio en Excel puro para 6,490 estudiantes. Arquitectura Medallion (Bronze/Silver/Gold) construida con Python (openpyxl), automatizada con VBA y Office Scripts (TypeScript). El Z-Score engine identifica ~1,000 estudiantes en riesgo académico.",
+        thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site",
+        tech: [
+          { label: "Python", class: "tag-dev" },
+          { label: "Excel BI", class: "tag-data" },
+          { label: "VBA", class: "tag-tools" },
+          { label: "Office Scripts", class: "tag-dev" },
+          { label: "openpyxl", class: "tag-data" }
+        ],
+        links: [
+          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site", icon: "book-open" }
         ]
       }
     ],
@@ -187,11 +209,15 @@ export const portfolioData = {
         title: "Data Analytics",
         icon: "bar-chart-2",
         color: "emerald",
-        description: "Extraction, transformation, and visualization of complex data for informed decision making.",
+        description: "Extraction, transformation, and visualization of complex data for decision making. Medallion pipelines (Bronze/Silver/Gold), applied statistics, and executive dashboarding.",
         skills: [
-          { name: "Data Cleaning", icon: "filter" },
-          { name: "ETL Processes", icon: "database" },
-          { name: "Data Storytelling", icon: "presentation" }
+          { name: "SQL / dbt", icon: "database" },
+          { name: "Python · Pandas", icon: "code" },
+          { name: "DuckDB · SQLite · PostgreSQL", icon: "hard-drive" },
+          { name: "Excel BI · VBA · Office Scripts", icon: "table-2" },
+          { name: "Data Cleaning & Wrangling", icon: "filter" },
+          { name: "ETL / ELT Pipelines", icon: "git-branch" },
+          { name: "Data Storytelling", icon: "bar-chart-2" }
         ]
       },
       {
@@ -211,12 +237,13 @@ export const portfolioData = {
       {
         id: 1,
         title: "Retail Ops Data Pipeline",
-        description: "Robust and secure ETL data pipeline for Retail operations. Extracts raw data, cleans it, loads into SQLite, and deploys an interactive Streamlit web app for real-time analysis.",
+        description: "End-to-end ETL pipeline for Retail. Generates 5,000+ synthetic sales records with controlled errors, cleans them in SQL (Silver Layer), loads into PostgreSQL via SQLAlchemy, and deploys a Streamlit web app for real-time sales analysis.",
         thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://www.notion.so/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Retail-Ops-Data-Pipeline-Resumen-del-Proyecto-334826eb5aad8058b524d85fbe86d4a0?pvs=74",
         tech: [
           { label: "Python", class: "tag-dev" },
-          { label: "SQLite", class: "tag-data" },
+          { label: "PostgreSQL", class: "tag-data" },
+          { label: "SQLAlchemy", class: "tag-data" },
           { label: "Streamlit", class: "tag-tools" }
         ],
         links: [
@@ -227,19 +254,36 @@ export const portfolioData = {
       {
         id: 2,
         title: "Marketing A/B Testing Pipeline",
-        description: "The Marketing team asked: 'Variant B has more sales this month — should we roll it out to everyone?' This pipeline answers that with statistical rigor using dbt + DuckDB.",
+        description: "Does Variant B have higher conversions? This pipeline answers with statistical rigor (Z-test, p=0.0006). Full Medallion architecture: synthetic dirty traffic → dbt + DuckDB transformation → statistical analysis → interactive Streamlit dashboard.",
         thumbnail: "https://images.unsplash.com/photo-1674027001844-6ad209efd09e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "DuckDB", class: "tag-data" },
           { label: "Pandas", class: "tag-data" },
-          { label: "DBT", class: "tag-data" },
+          { label: "dbt", class: "tag-data" },
           { label: "Streamlit", class: "tag-tools" }
         ],
         links: [
           { title: "Live App", url: "https://proyectomarketingabtest-wpzvh3ecsi8cqqbtunwn3q.streamlit.app/", icon: "external-link" },
           { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Marketing-A-B-Testing-Pipeline-336826eb5aad80d5b5f7d5254de142bc", icon: "book-open" }
+        ]
+      },
+      {
+        id: 3,
+        title: "Student Performance BI",
+        description: "Business Intelligence engine in pure Excel for 6,490 students. Medallion Architecture (Bronze/Silver/Gold) built with Python (openpyxl), automated via VBA and Office Scripts (TypeScript). Z-Score engine identifies ~1,000 students at academic risk.",
+        thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site",
+        tech: [
+          { label: "Python", class: "tag-dev" },
+          { label: "Excel BI", class: "tag-data" },
+          { label: "VBA", class: "tag-tools" },
+          { label: "Office Scripts", class: "tag-dev" },
+          { label: "openpyxl", class: "tag-data" }
+        ],
+        links: [
+          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site", icon: "book-open" }
         ]
       }
     ],
