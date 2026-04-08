@@ -94,7 +94,7 @@ export const portfolioData = {
         title: "Student Performance BI",
         description: "Motor de Inteligencia de Negocio en Excel puro para 6,490 estudiantes. Arquitectura Medallion (Bronze/Silver/Gold) construida con Python (openpyxl), automatizada con VBA y Office Scripts (TypeScript). El Z-Score engine identifica ~1,000 estudiantes en riesgo académico.",
         thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://adventurous-guavaberry-dc6.notion.site",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "Excel BI", class: "tag-data" },
@@ -274,7 +274,7 @@ export const portfolioData = {
         title: "Student Performance BI",
         description: "Business Intelligence engine in pure Excel for 6,490 students. Medallion Architecture (Bronze/Silver/Gold) built with Python (openpyxl), automated via VBA and Office Scripts (TypeScript). Z-Score engine identifies ~1,000 students at academic risk.",
         thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://adventurous-guavaberry-dc6.notion.site",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "Excel BI", class: "tag-data" },
