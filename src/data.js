@@ -94,7 +94,7 @@ export const portfolioData = {
         title: "Student Performance BI",
         description: "Motor de Inteligencia de Negocio en Excel puro para 6,490 estudiantes. Arquitectura Medallion (Bronze/Silver/Gold) construida con Python (openpyxl), automatizada con VBA y Office Scripts (TypeScript). El Z-Score engine identifica ~1,000 estudiantes en riesgo académico.",
         thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "Excel BI", class: "tag-data" },
@@ -104,7 +104,7 @@ export const portfolioData = {
         ],
         links: [
           { title: "Ver Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
-          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
+          { title: "Documentación", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
         ]
       }
     ],
@@ -275,7 +275,7 @@ export const portfolioData = {
         title: "Student Performance BI",
         description: "Business Intelligence engine in pure Excel for 6,490 students. Medallion Architecture (Bronze/Silver/Gold) built with Python (openpyxl), automated via VBA and Office Scripts (TypeScript). Z-Score engine identifies ~1,000 students at academic risk.",
         thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4",
+        notionUrl: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4",
         tech: [
           { label: "Python", class: "tag-dev" },
           { label: "Excel BI", class: "tag-data" },
@@ -285,7 +285,7 @@ export const portfolioData = {
         ],
         links: [
           { title: "View Dashboard", url: "https://1drv.ms/x/c/5492ba4b5afe1131/IQCUYUV4pxyuS6zcLyf_QmBgAcGOu2DpHWWzP-6HYAs22kQ?e=viIjZ3", icon: "external-link" },
-          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-ExcelPerformance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
+          { title: "Documentation", url: "https://adventurous-guavaberry-dc6.notion.site/Proyecto-03-Excel-Performance-BI-33c826eb5aad8095a634ea5af7ffecf4", icon: "book-open" }
         ]
       }
     ],
